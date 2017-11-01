@@ -1,15 +1,15 @@
 def hello_t(array)
-  i = 0
 
+  if block_given?
+    i = 0
     while i < array.length
-        if yield array[i] != nil then
+        yield array[i]
           i = i + 1
-        else
-          puts "Hey! No block was given!"
-        end
       end
-      
       array
+    else          
+      puts "Hey! No block was given!"
+    end
 
 end
 
