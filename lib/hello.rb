@@ -2,14 +2,14 @@ def hello_t(array)
   i = 0
   names = []
   if array.blank then
-  puts "Hey! No block was given!\n"
-  else    
+    puts "Hey! No block was given!\n"
+  else
     while i < array.length
         yield array[i]
         i = i + 1
       end
       array
-  
+
   end
 end
 
