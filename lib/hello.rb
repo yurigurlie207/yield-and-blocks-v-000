@@ -1,7 +1,7 @@
 def hello_t(array)
   i = 0
   names = []
-  if array.blank then
+  if array == [] then
     puts "Hey! No block was given!\n"
   else
     while i < array.length
