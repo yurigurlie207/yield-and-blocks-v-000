@@ -1,7 +1,7 @@
 def hello_t(array)
   i = 0
   names = []
-  if array.any then
+  if array.blank then
     while i < array.length
       yield array[i]
       i = i + 1
