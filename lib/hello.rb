@@ -1,6 +1,6 @@
 def hello_t(array)
   i = 0
-  if array != nil then
+  if array.any then
     while i < array.length
       yield array[i]
       i = i + 1
