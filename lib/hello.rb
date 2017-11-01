@@ -1,5 +1,6 @@
 def hello_t(array)
   i = 0
+  names = []
   if array.any then
     while i < array.length
       yield array[i]
