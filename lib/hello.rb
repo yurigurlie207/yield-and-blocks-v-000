@@ -2,12 +2,13 @@ def hello_t(array)
   i = 0
 
     while i < array.length
-        if yield array[i] then
+        if yield array[i] != null then
           i = i + 1
         else
           puts "Hey! No block was given!"
         end
       end
+      
       array
 
 end
